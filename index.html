@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informações sobre a Poluição</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Poluição: Informações e Conscientização</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>O que é Poluição?</h2>
+      <p>A poluição é a introdução de substâncias ou agentes poluentes no meio ambiente, causando efeitos negativos à saúde humana, à biodiversidade e ao planeta como um todo.</p>
+    </section>
+
+    <section style="display: flex; gap: 2rem; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 300px;">
+    <h2>Tipos de Poluição</h2>
+    <ul>
+      <li>Poluição do ar</li>
+      <li>Poluição da água</li>
+      <li>Poluição do solo</li>
+      <li>Poluição sonora</li>
+      <li>Poluição luminosa</li>
+      <li>Poluição térmica</li>
+    </ul>
+  </div>
+
+ <div class="carousel-wrapper">
+  <div class="carousel" id="carousel">
+    <img src="img/download (1).jfif" alt="Poluição do ar">
+    <img src="img/download.jfif" alt="Poluição da água">
+    <img src="img/images.jfif" alt="Lixão">
+  </div>
+  <div class="carousel-buttons">
+    <button onclick="prevSlide()">◀</button>
+    <button onclick="nextSlide()">▶</button>
+  </div>
+</div>
+
+ 
+
+    <section>
+      <h2>Quais as causas da Poluição?</h2>
+      <p>Algumas das principais causas da poluição incluem: emissões industriais, queima de combustíveis fósseis, descarte inadequado de resíduos, desmatamento e uso excessivo de agrotóxicos.</p>
+      
+    </section>
+
+    <section>
+      <h2>Quais as consequências da Poluição?</h2>
+      <p>A poluição pode causar doenças respiratórias, destruição de habitats, mudanças climáticas, morte de espécies e contaminação de alimentos e da água.</p>
+      
+    </section>
+
+    <section>
+      <h2>Como Reduzir a Poluição?</h2>
+      <p>Algumas ações incluem: reciclagem, uso de transporte coletivo, economia de energia, plantio de árvores e consumo consciente.</p>
+      
+    </section>
+
+   <section>
+  <h2>Como uma plataforma digital pode influenciar na redução de poluição?</h2>
+  <p>Uma plataforma digital pode desempenhar um papel fundamental na conexão de pessoas, organizações e ações em prol de uma causa social como a redução da poluição. A seguir, veja como isso pode acontecer na prática:</p>
+
+  <h3>1. Conscientização e Educação</h3>
+  <ul>
+    <li>Publicação de artigos, vídeos e infográficos sobre os impactos da poluição.</li>
+    <li>Campanhas de sensibilização em datas comemorativas, como o Dia Mundial do Meio Ambiente.</li>
+    <li>Oferecimento de cursos e webinars sobre reciclagem, sustentabilidade e consumo consciente.</li>
+  </ul>
+
+  <h3>2. Mobilização de Pessoas</h3>
+  <ul>
+    <li>Divulgação de oportunidades de voluntariado como mutirões de limpeza e plantio de árvores.</li>
+    <li>Organização de petições online para pressionar governos e empresas.</li>
+    <li>Realização de eventos colaborativos como feiras e fóruns ambientais.</li>
+  </ul>
+
+  <h3>3. Conexão com ONGs e Projetos</h3>
+  <ul>
+    <li>Mapeamento de iniciativas ambientais locais.</li>
+    <li>Facilidade para doações e campanhas de financiamento coletivo.</li>
+    <li>Promoção de parcerias entre ONGs, empresas e escolas.</li>
+  </ul>
+
+  <h3>4. Engajamento e Gamificação</h3>
+  <ul>
+    <li>Criação de desafios com recompensas e selos para quem pratica hábitos sustentáveis.</li>
+    <li>Relatórios de impacto que mostram as conquistas da comunidade da plataforma.</li>
+  </ul>
+
+  <h3>5. Monitoramento e Denúncia</h3>
+  <ul>
+    <li>Mapeamento colaborativo de áreas poluídas ou de descarte irregular de lixo.</li>
+    <li>Canal de denúncia direto a órgãos ambientais.</li>
+  </ul>
+
+  <p>Plataformas digitais como essa podem transformar a consciência ambiental em ação coletiva e impacto real.</p>
+  
+</section>
+
+    <section class="quiz">
+      <h2>Quiz: Teste seus conhecimentos!</h2>
+      <div id="quiz-container"></div>
+      <button onclick="submitQuiz()">Enviar Respostas</button>
+      <div id="quiz-result"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Site sobre Poluição</p>
+  </footer>
+
+  <script>
+    const questions = [
+      {
+        q: "O que é poluição?",
+        a: ["Introdução de elementos naturais", "Introdução de poluentes no meio ambiente", "Fenômeno climático"],
+        c: 1
+      },
+      {
+        q: "Qual não é um tipo de poluição?",
+        a: ["Poluição sonora", "Poluição de ideias", "Poluição luminosa"],
+        c: 1
+      },
+      {
+        q: "Qual das opções é uma causa da poluição?",
+        a: ["Queima de combustíveis fósseis", "Chuva", "Vento forte"],
+        c: 0
+      },
+      {
+        q: "O que é reciclável?",
+        a: ["Plástico", "Comida estragada", "Lixo hospitalar"],
+        c: 0
+      },
+      {
+        q: "Qual é uma consequência da poluição?",
+        a: ["Melhoria da saúde", "Contaminação da água", "Crescimento da fauna"],
+        c: 1
+      },
+      {
+        q: "Como podemos reduzir a poluição?",
+        a: ["Consumir mais", "Desmatar florestas", "Reciclar"],
+        c: 2
+      },
+      {
+        q: "Qual dessas ações ajuda o meio ambiente?",
+        a: ["Queimar lixo", "Jogar lixo no rio", "Usar transporte coletivo"],
+        c: 2
+      }
+    ];
+
+    function loadQuiz() {
+      const container = document.getElementById("quiz-container");
+      questions.forEach((question, i) => {
+        const div = document.createElement("div");
+        div.classList.add("question");
+        div.innerHTML = `<p><strong>${i + 1}. ${question.q}</strong></p>` +
+          question.a.map((ans, j) =>
+            `<label><input type="radio" name="q${i}" value="${j}"> ${ans}</label><br>`
+          ).join("");
+        container.appendChild(div);
+      });
+    }
+
+    function submitQuiz() {
+      let score = 0;
+      questions.forEach((q, i) => {
+        const selected = document.querySelector(`input[name='q${i}']:checked`);
+        if (selected && parseInt(selected.value) === q.c) {
+          score++;
+        }
+      });
+      document.getElementById("quiz-result").innerHTML = `<p>Você acertou ${score} de ${questions.length} perguntas.</p>`;
+    }
+
+    loadQuiz();
+    let currentIndex = 0;
+
+  function showSlide(index) {
+    const images = document.querySelectorAll("#carousel img");
+    const total = images.length;
+
+    // Garantir que o índice fique dentro do intervalo
+    if (index < 0) currentIndex = total - 1;
+    else if (index >= total) currentIndex = 0;
+    else currentIndex = index;
+
+    // Esconde todas as imagens
+    images.forEach(img => img.classList.remove("active"));
+
+    // Mostra apenas a imagem atual
+    images[currentIndex].classList.add("active");
+  }
+
+  function nextSlide() {
+    showSlide(currentIndex + 1);
+  }
+
+  function prevSlide() {
+    showSlide(currentIndex - 1);
+  }
+
+  // Inicializa com a primeira imagem visível
+  document.addEventListener("DOMContentLoaded", () => {
+    showSlide(0);
+  });
+</script>
+
+</body>
+</html>
